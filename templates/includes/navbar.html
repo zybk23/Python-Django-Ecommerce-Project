@@ -1,0 +1,24 @@
+
+<nav class="" role="navigation">
+        <a href="/">
+            <div class="logo">
+                <i class="fab fa-apple"></i>
+            </div>
+        </a>
+        <ul  class="nav-links">
+            <li><a href="/" >Home</a></li>
+            <li><a href="/cart">Shop-Cart</a></li>
+            <li><a href="/checkout">Login</a></li>
+        </ul>
+        <div  id="menu">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+        <div class="form-inline my-2 my-lg-0">
+            <a href="{% url 'cart'%}">
+                <i style="color:green;font-size:25px;" class="fas fa-cart-arrow-down"></i>
+            </a>
+            <p id="cart-total">{{cartItems}}</p>
+        </div>
+</nav>
